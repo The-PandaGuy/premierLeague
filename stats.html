@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League Fixtures</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header{
+            color: rgb(61, 0, 61);
+            font-size: 30px;
+            height: 150px;
+        
+            background: 
+          /* On "top" */
+          repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            #01ffa2 15px,
+            #00ffbfec 50px
+        ),
+        
+          linear-gradient(
+            to bottom,
+            #01ffa2,
+            #00ffbfec
+          );
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="premier-league-new-logo-D22A0CE87E-seeklogo.com.png" alt="Premier League" width="100px">
+    </div>
+
+    <div id="navbar">
+        <nav>
+            <ul class="navUl">
+                <li class="navLinks"><a href="index.html">Tables</a></li>
+                <li class="navLinks"><a href="liveMatches.html">Live Matches</a></li>
+                <li class="navLinks"><a href="fixtures.html">Fixtures</a></li>
+                <li class="navLinks"><a href="results.html">Results</a></li>
+                <li class="navLinks" id="active"><a href="stats.html">Stats</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <h1 style="float: left;">Stats Center</h1>
+    </header>
+    <div id="scoreaxis-widget-43f34" style="border-width:1px;border-color:rgba(0, 0, 0, 0.15);border-style:solid;border-radius:8px;padding:10px;background:rgb(255, 255, 255);width:100%"><iframe id="Iframe" src="https://www.scoreaxis.com/widget/league-top-players/8?autoHeight=1&amp;playersNumber=9&amp;font=1&amp;fontSize=&amp;inst=43f34" style="width:100%;border:none;transition:all 300ms ease"></iframe><script>window.addEventListener("DOMContentLoaded",event=>{window.addEventListener("message",event=>{if(event.data.appHeight&&"43f34"==event.data.inst){let container=document.querySelector("#scoreaxis-widget-43f34 iframe");container&&(container.style.height=parseInt(event.data.appHeight)+"px")}},!1)});</script></div><div style="font-size: 12px; font-family: Arial, sans-serif; text-align: left;"></div>
+</body>
+</html>

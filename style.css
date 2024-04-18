@@ -1,0 +1,142 @@
+body{
+    color: white;
+    font-family: sans-serif, Arial;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+#header{
+    background-color: rgb(61, 0, 61);
+    height: 50px;
+}
+
+#pgeTitle{
+    font-size: 30px;
+    height: 150px;
+    font-weight: bold;
+
+    background: 
+  /* On "top" */
+  repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    #0191ff 15px,
+    #00c3ffec 50px
+),
+
+  linear-gradient(
+    to bottom,
+    #0191ff,
+    #00c3ffec
+  );
+}
+
+#active a{
+    position: relative;
+    text-decoration: none;
+}
+
+#active a::after{
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(to left, rgb(174, 24, 255), lightblue);
+    transform: scaleX(1);
+    transform-origin: bottom;
+}
+
+.navUl{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    overflow: hidden;
+    margin-left: 100px;
+}
+  
+.navLinks {
+    float: left;
+}
+  
+.navLinks a {
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*li a:hover {
+    font-weight: bold;
+} */
+
+a {
+    position: relative;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+a::after{
+    content: ''; /* Add content after the element */
+    position: absolute; /* Position absolute for pseudo-element */
+    width: 100%; /* Full width */
+    transform: scaleX(0); /* Initial scale of 0 for underline effect */
+    height: 2px; /* Height of the underline */
+    bottom: 0; /* Align to bottom */
+    left: 0; /* Align to left */
+    transform-origin: bottom right; /* Set transform origin */
+    transition: transform 0.25s ease-out;
+}
+
+a:hover::after{
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(to left, rgb(174, 24, 255), lightblue);
+    transform: scaleX(1);
+    transform-origin: bottom;
+}
+
+hr{
+    border: none;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    height: 5px;
+    width: 90%;
+    background: linear-gradient(to left, rgb(174, 24, 255), lightblue);
+    margin-left: 5%;
+}
+
+footer{
+    background-color: rgb(61, 0, 61);
+    height: 25vh;
+}
+
+.footerlist{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(61, 0, 61);
+    overflow: hidden;
+}
+
+#footerlinks a{
+    font-family: sans-serif, Arial;
+    text-decoration: none;
+    color: rgb(175, 175, 175);
+}
+
